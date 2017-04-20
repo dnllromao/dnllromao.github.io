@@ -1,102 +1,5 @@
 body {
 	margin: 0;
-	/*padding: 0;*/
-	font-size: 15px;
-	background-color: #ddd;
-}
-
-html,
-body {
-	height: 100%;
-	text-align: center
-}
-
-body:before {
-	content: '';
-	display: inline-block;
-	height: 100%; 
-	vertical-align: middle;
-}
-
-
-.vcard {
-	display: inline-block;
-	vertical-align: middle;
-	width: 500px;
-	height: 250px;
-	background-color: #eee;
-	padding: 1em;
-	position: relative;
-	box-shadow: 0px 5px 8px #888888;
-}
-	.vcard-nav {
-		width: 200px;
-		height: 200px;
-		position: absolute;
-		right: 10px;
-		top: -75px;
-		border: 5px solid #fff;
-		border-radius: 50%;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		box-shadow: 0px 5px 8px #888888;
-		background-color: #eee;
-	}
-
-	@keyframes rotation {
-		from { transform: rotate(0deg); }
-		to { transform: rotate(180deg); }
-	}
-
-	.vcard-nav:hover {
-		animation-name: rotation;
-		animation-duration: 5s;
-	}
-
-		.vcard-nav figure {
-			width: 150px;
-			height: 150px;
-			border-radius: 50%;
-			overflow: hidden;
-			margin: 0;
-		}
-
-			.vcard-nav figure img {
-				width: 100%;
-				position: relative;
-				top: -18px;
-			}
-
-		.nav-item {
-			position: absolute;
-			background: white;
-			border-radius: 50%;
-			width: 40px;
-			height: 40px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-			.contact {
-				top: -20px;
-				/*padding: 10px 12px;*/
-			}
-
-			.about {
-				bottom: -20px;
-				/*padding: 10px 12px;*/
-			}
-
-	.vcard-content {
-		display: flex;
-		height: 100%;
-	}
-
-		.vcard-info {
-			width: 70%;body {
-	margin: 0;
 	position: relative;
 	font-size: 15px;
 	background-color: #ddd;
@@ -280,7 +183,7 @@ body.page-404 {
 	/* why can't insert cover in the background statement ? */
 }
 
-	.title {
+	.page-404 .title {
 		color: #FFEB3B;
 		color: #00BCD4;
 		margin: 0;
@@ -374,52 +277,3 @@ body.page-404 {
 
 
 	
-			text-align: left;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			padding-right: 1em;
-			border-right: 1px solid #ddd;
-		}
-
-			.vcard .title {
-				color: #555;
-				text-transform: capitalize;
-				font-size: 1.8em;
-				margin: 0 0 5px 0;
-			}
-
-			.vcard .quote {
-				line-height: 30px;
-			}
-			.vcard .quote:before {
-				content: '';
-				width: 5px;
-				margin-right: 10px;
-				background-color: yellow;
-				height: 100%;
-				display: inline-block;
-				vertical-align: middle;
-			}
-
-		.vcard-social {
-			width: 30%;
-			border-left: 1px solid #fff;
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-end;
-			padding-left: 1em;
-		}
-
-		 	.social-icons {
-				display: -webkit-flex;
-				display: flex;
-				flex-wrap: wrap;
-		 	}
-
-		 	.social-icons .fa {
-		 		width: calc(100% / 3);
-		 		padding: 0.3em;
-		 		box-sizing: border-box;
-		 		font-size: 1.3em;
-		 	}
